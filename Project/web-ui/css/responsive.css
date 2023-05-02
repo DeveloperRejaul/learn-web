@@ -1,0 +1,105 @@
+@media only screen and (max-width: 1024px){
+    .display-none{display: none;}
+    .btn-bg{margin-top: 20px;}
+    .logo img { max-width: 50%;}
+    html{font-size: 80%;}
+    .info .inner-info {width: 98%; bottom: 1%;}
+    .banner-text.absolute.bg-white.py-4.px-4 { width: 50%;}
+    .button-group {left: 0%;bottom: 30%;}
+    .absolute.pimg img {width: 80%;}
+    .absolute.pimg {right: 20%;}
+    .left-inner02 #mlButton { width: 100%;}
+    #asked .list .inner .haddig {padding: 30px 0;}
+    .logo-items li{margin-right: 2px;}
+    .footer-buttom .text-white { width: 300px;}
+}
+@media only screen and (max-width: 992px){
+    .footer-buttom .buttom div:nth-child(2),
+    .footer-buttom .buttom div:nth-child(3){display: none;}
+    .footer-buttom .text-white {width: auto;}
+    .buttom{ grid-template-columns: repeat(2,1fr);}
+    .footer-buttom .buttom div:nth-child(4){text-align: right;}
+}
+@media only screen and (max-width: 768px){
+    .banner-text.absolute.bg-white.py-4.px-4 {top: 20%;left: 16%;background-color: #ffffff8a; width: 70%;border-radius: 5px;}
+    .text-gray-900.font-bold.sm\:text-sm.pt-9 {padding-top: 0;}
+    .primary.lg\:text-7xl.md\:text-5xl.sm\:text-4xl.font-bold { font-size: 30px;line-height: 10px;}
+    .primary2.lg\:text-7xl.md\:text-5xl.sm\:text-4xl.font-bold.pl-3 {font-size: 30px;}
+    .info .inner-info {width: 95%;bottom: 24%;background: #ffffff8a;left: 15px;}
+    .text-sm.text-gray-500 {color: black;font-size: 12px;font-weight: bold;}
+    .px-5 {padding-left: 0rem;padding-right: 0rem;}
+    .text-sm.text-gray-500 {color: black;font-size: 12px;font-weight: bold;}
+    .button.px-5  .btn-bg {margin-top: 0px;}
+    .banner-image { width: 100%}
+    .font-bold.text-xl.primary2{font-size: 11px;}
+    .button-group {left: 57%;bottom: 4%;background: #ffffff96;border-radius: 5px;padding: 10px 0;}
+    .button-group .btn-bg {margin-top: 0px;}
+    .location.px-5 { margin-right: 10px;}
+    .Apartment.px-5 {width: 23%;}
+    .Price.px-5 {width: 30%;}
+    .Advance.px-5 {width: 20%;}
+    #service {padding: 20px 10px;}
+    .flex.flex-col.text-center.w-full.mb-20 { margin-bottom: 20px;}
+    .container.px-5.py-24.mx-auto {padding: 20px 10px;}
+    #service #mlButton {margin-top: 20px;}
+    #card-section {padding: 20px 10px;}
+    .card-slide {padding-right: 28px;}
+    .sRight.absolute.cursor-pointer {right: 40px;top: 34%;}
+    .sLeft.absolute.cursor-pointer {top: 34%;}
+    .inner-left.p-10.text-white.rounded-md {padding: 10px;}
+    #planItemas ul li span{display: none;}
+    #planItemas .absolute.shadow-sm{padding: 20px 0;}
+    .right-curve.w-2\/5.flex.items-center {width: 50%;}
+    #planItemas ul li{font-weight: 600;}
+    .text-sm.space-y-2 {padding-bottom: 8px;}
+    #Plans {height: 455px;}
+    .absolute.pimg {right: 6%;}
+    .absolute.pimg img { width: 50%;}
+    .doded span {width: 5px;height: 5px;}
+    .doded.absolute {grid-gap: 9px;left: 41%;top: 1%;}
+    .inner-drem.container.px-5.py-24.mx-auto.w-full.flex.justify-between.relative {padding: 30px 10px;}
+    .top.text-center.pb-6 {padding-top: 20px;}
+    .footer-top {padding: 0px 10px;}
+    .footer-buttom {padding: 0 10px;}
+    .logo-items li {width: 28px;height: 28px;line-height: 1px;}
+    .usefulLinks ul li,.help ul li,.address ul li {padding: 0;}
+}
+@media only screen and (max-width: 576px){
+    .p-4.lg\:w-1\/5.md\:w-1\/2.shadow-md { width: 100%;}
+    .text-4xl.font-bold.mb-5.primary2,.text-4xl.font-bold.mb-1.color03 {font-size: 20px;}
+    #mlButton {width: 100%;}
+    .mx-auto.mb-5.leading-relaxed.text-xl.text-gray-500,.flex.flex-col.text-center.w-full.mb-6 {margin-bottom: 0;}
+    #lightSlider,.card-slide,#slide {padding: 0;}
+    .sRight.absolute.cursor-pointer {right: 20px;top: 36%;width: 25px;height: 25px;display: flex;justify-content: center;align-items: center;}
+    .fas.fa-angle-left.text-4xl, .fas.fa-angle-right.text-4xl {font-size: 25px;}
+    .sLeft.absolute.cursor-pointer {left: 20px;top: 36%; padding: 5px;width: 25px;height: 25px;display: flex;justify-content: center;align-items: center;}
+    #slide #mlButton{width: 50%; }
+    .absolute.shadow-sm.rounded-md.items.bg-white.flex.justify-around.p-8.active {display: block;}
+    .left-info.w-2\/4.flex.items-center,.right-curve.w-2\/5.flex.items-center {width: 100%;}
+    #Plans {height: 700px;}
+    .absolute.pimg {bottom: 99px;right: -19%;}
+    .absolute.pimg img {width: 36%; }
+    .leading-10.text-3xl.font-bold.mb-1.color03 {font-size: 20px;}
+    .button.mt-6 #mlButton {font-size: 12px;}
+    .lest.grid.grid-cols-4.grid-rows-2.justify-items-center.gap-4.w-full {display: grid;grid-template-columns: repeat(2,1fr);}
+    #asked .list .inner .haddig {padding: 21px 0;}
+    #asked .list #faq-item {height: 75px;}
+    #asked .list #faq-item.active {height: 190px;}
+    .buttom {grid-template-columns: repeat(1,1fr);text-align: center;}
+    .footer-buttom .buttom div:nth-child(4) {text-align: center;}
+    .top.grid.grid-cols-4.py-5{grid-template-columns: repeat(2, minmax(0, 1fr));}
+    .help,.address {padding-top: 20px;}
+    .inline.text-black.p-5.cursor-pointer {font-size: 14px;}
+    .banner-text.absolute.bg-white.py-4.px-4 {top: 7%;left: 3%;width: 95%;}
+    .primary.lg\:text-7xl.md\:text-5xl.sm\:text-4xl.font-bold,.primary2.lg\:text-7xl.md\:text-5xl.sm\:text-4xl.font-bold.pl-3 {font-size: 20px;}
+    .text-gray-900.font-bold.sm\:text-sm.pt-9 {font-size: 12px;}
+    .button-group.absolute #mlButton{width: auto;}
+    .button-group.absolute {width: 95%;padding: 7px 10px;}
+    .button-group {left: 9px;bottom: 54%;}
+    .banner-img.relative {height: 400px;}
+    .inner-info.bg-white.flex.items-center.shadow-md.w-max.p-4.rounded-md.absolute {display: grid;grid-template-columns: repeat(2,1fr);}
+    .Price.px-5,.Advance.px-5,.Apartment.px-5 { width: 100%;}
+    .info .inner-info {bottom: 4%;left: 6px;}
+    .Price.px-5 {padding-top: 10px;}
+    .button.px-5 {padding-top: 10px;}
+}

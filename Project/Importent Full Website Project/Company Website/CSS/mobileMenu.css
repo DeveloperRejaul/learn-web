@@ -1,0 +1,39 @@
+/* .header-body ul.active{ display:block;}
+.header-body ul.active {
+    position: absolute;
+    background: black;
+    top: 165%;
+    width: 360px;
+    height: auto;
+    border-radius: 7px;
+    right: 25%;
+    padding: 10px 5px;
+}
+.header-body ul.active li a{color: white;}
+.header-menu .inner-header .header-body ul.active li ul {width: 180px;}
+.header-menu .inner-header .header-body ul.active li ul {left: 49%;}
+.header-menu .inner-header .header-body ul.active li {display: block;}
+.header-menu .inner-header .header-body ul.active li:hover > a {border-radius: 0px;}
+.header-menu .inner-header .header-body ul.active li ul {position: absolute;top: 103%;z-index: 999;border-radius: 0px;}
+#cros-icon {
+    color: white;
+    float: right;
+    padding: 3px 9px 10px 10px;
+    font-size: 28px;
+    cursor: pointer;
+    position: sticky;
+    z-index: 9999;
+}
+.fas.fa-chevron-down {
+    float: right;
+    border: 1px solid #fff;
+    padding: 2px;
+}
+
+
+
+
+
+
+
+ */

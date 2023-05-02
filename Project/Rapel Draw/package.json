@@ -1,0 +1,17 @@
+{
+  "name": "USER",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+
+    "build": "tailwindcss -i ./src/tailwind.css -o ./Output/tailwind.css -w"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^2.2.19"
+  }
+}

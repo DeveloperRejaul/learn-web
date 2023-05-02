@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real estate home page</title>
+    <!-- Fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+    <!-- Tailwindcss -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
+    <!-- main CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Responcive -->
+    <link rel="stylesheet" href="./css/responsive.css">
+
+
+
+</head>
+<body>
+
+    <!-- ======================== Nav section start  ========================== -->
+    <section id="navBar">
+        <div class="inner-nav">
+
+            <nav class="bg-white shadow dark:bg-gray-800">
+                <div class="container px-6 py-4 mx-auto lg:flex lg:justify-between lg:items-center">
+                    <div class="lg:flex lg:items-center">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <a class="logo text-2xl font-bold text-gray-800 dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300" href="#">
+                                    <img src="./img/Group 9738.png" alt="Logo">
+                                </a>
+                            </div>
+        
+                            <!-- Mobile menu button start -->
+                            <div class="flex lg:hidden">
+                                <button id="mobileButton" type="button" class="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400" aria-label="toggle menu">
+                                    <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
+                                        <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <!-- Mobile menu button end-->
+                        </div>
+        
+                        <div id="mobileMenu" class="flex flex-col text-gray-600 capitalize dark:text-gray-300 lg:flex lg:px-16 lg:-mx-4 lg:flex-row lg:items-center">
+                            <a href="#" class="mt-2w-min w-min lg:mt-0 lg:mx-4 hover:text-gray-800 dark:hover:text-gray-200">Home</a>
+                            <a href="#" class="mt-2 w-min lg:mt-0 lg:mx-4 hover:text-gray-800 dark:hover:text-gray-200">About</a>
+                            <a href="#" class="mt-2 w-min lg:mt-0 lg:mx-4 hover:text-gray-800 dark:hover:text-gray-200">Featured</a>
+                            <a href="#" class="mt-2 w-min lg:mt-0 lg:mx-4 hover:text-gray-800 dark:hover:text-gray-200">Contact</a>
+                            <div class="relative mt-4 lg:mt-0 lg:mx-4">
+                                <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                                    <svg class="w-4 h-4 text-gray-600 dark:text-gray-300" viewBox="0 0 24 24" fill="none">
+                                        <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+        
+                                <input type="text" class="w-full py-1 pl-10 pr-4 text-gray-700 placeholder-gray-600 bg-white border-b border-gray-600 dark:placeholder-gray-300 dark:focus:border-gray-300 lg:w-56 lg:border-transparent dark:bg-gray-800 dark:text-gray-300 focus:outline-none focus:border-gray-600" placeholder="Saved Search">
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class=" display-none flex justify-start  mt-6 lg:flex lg:mt-0 lg:-mx-2">
+                        <a href="#" class="mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Reddit">
+                            <span class="mr-10 rounded-full flex justify-center items-center"><i class="far fa-bell"></i></span>
+                        </a>
+                    </div>
+                    
+                    <button id="mlButton" type="submit" class=" btn-bg px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring focus:ring-indigo-300 focus:ring-opacity-80">
+                        LOGIN
+                    </button>
+                </div>
+            </nav>
+        
+        </div>
+    </section>
+
+    <!-- ======================== Banner section start  ========================== -->
+    <section id="banner">
+        <div class="inner-banner bg-white">
+            <div class="container px-6 py-4 mx-auto lg:flex lg:justify-between lg:items-center">
+                <div class="banner-img relative">
+                    <img class="banner-image  ml-auto" src="img/pierre-chatel-innocenti-gxyeia7Syuk-unsplash.png" alt="Banner Image">
+
+                    <div class="banner-text absolute bg-white rounded-3xl py-4 px-4 shadow-md">
+                        <h1 class="primary lg:text-7xl md:text-5xl sm:text-4xl font-bold">Let’s find </h1>
+                        <h2 class="primary2 lg:text-7xl md:text-5xl sm:text-4xl font-bold pl-3">yours Dream..</h2>
+                        <p class="text-gray-900 font-bold sm:text-sm pt-9 ">Building award winning properties across London <br>  UK and the All world</p>
+                    </div>
+
+                    <div class="button-group absolute">
+                        <button id="mlButton" type="submit" class=" btn-bg px-6 py-2 tracking-wide text-white capitalize transition-colors duration-200 transform bg-indigo-600 rounded-full font-bold hover:bg-indigo-500 focus:outline-none focus:ring focus:ring-indigo-300 focus:ring-opacity-80">
+                            Buy
+                        </button>
+                        <button id="mlButton" type="submit" class=" px-6 py-2 font-bold  text-black rounded-full focus:outline-none">
+                            Sell
+                        </button>
+                        <button id="mlButton" type="submit" class="px-6 py-2 top font-bold  text-black rounded-full focus:outline-none ">
+                            Rent
+                        </button>
+                    </div>
+
+                    <div class="info">
+                        <div class="inner-info bg-white flex items-center shadow-md w-max p-4 rounded-md absolute">
+
+                            <div class="location px-5">
+                                <p class="text-sm text-gray-500">City/Street</p>
+                                <h2 class="font-bold text-xl primary2">Enter City</h2>
+                            </div>
+                            <div class="Apartment px-5 ">
+                                <p class="text-sm text-gray-500">Apartment Type</p>
+                                <h2 class="font-bold text-xl primary2">Deluxe Portion :</h2>
+                            </div>
+                            <div class="Price px-5">
+                                <p class="text-sm text-gray-500">Price Range</p>
+                                <h2 class="font-bold text-xl primary2">Min price - Max price :</h2>
+                            </div>
+                            <div class="Advance px-5">
+                                <p class="text-sm primary2">+ Advance Filter</p>
+                            </div>
+                            <div class="button px-5">
+                                <button id="mlButton" type="submit" class=" btn-bg px-6 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring focus:ring-indigo-300 focus:ring-opacity-80">
+                                    Search
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============== Service section start ===================== -->
+    <section id="service" class="text-gray-600 body-font py-14 ">
+        <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="text-4xl font-bold mb-1 color03">HI, What do you want to your</h1>
+            <h2 class="text-4xl font-bold mb-5 primary2">Dream Apartment</h2>
+            <p class="lg:w-2/3 mx-auto mb-5 leading-relaxed text-xl text-gray-500">Select a Apartment type below to begins</p>
+        </div>
+        <div class="flex flex-wrap -m-4 justify-between">
+            
+            <div class="p-4 lg:w-1/5 md:w-1/2 shadow-md">
+            <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="flex-shrink-0 rounded-3xl w-full h-56 object-cover object-center mb-4" src="./img/top_@2x.jpg">
+                <div class="w-full"> 
+                    <label class="chackconten">
+                        <p>Deluxe Portion</p>
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            </div>
+            <div class="p-4 lg:w-1/5 md:w-1/2 shadow-md">
+            <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="flex-shrink-0 rounded-3xl w-full h-56 object-cover object-center mb-4" src="./img/delux.png">
+                <div class="w-full">
+                    <label class="chackconten">
+                        <p>Double Height</p>
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            </div>
+            <div class="p-4 lg:w-1/5 md:w-1/2 shadow-md ">
+                <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="flex-shrink-0 rounded-3xl w-full h-56 object-cover object-center mb-4" src="./img/top_@2x.jpg">
+                <div class="w-full">
+                    <label class="chackconten">
+                        <p>Penthouse</p>
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                </div>
+            </div>
+            <div class="p-4 lg:w-1/5 md:w-1/2 shadow-md">
+                <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="flex-shrink-0 rounded-3xl w-full h-56 object-cover object-center mb-4" src="./img/studio.jpg">
+                <div class="w-full">
+                    <label class="chackconten">
+                        <p>The Studio</p>
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+        <div class="button px-5 text-center">
+            <button id="mlButton" type="submit" class=" px-6 w-1/3  py-3 font-semibold tracking-wide text-white capitalize transition-colors duration-200 transform bg-primary2 rounded-md hover:bg-indigo-500 focus:outline-none">
+                Continue
+            </button>
+        </div>
+    </section>
+    <!--=================  Card section start ================= -->
+    <section id="card-section" class="relative">
+
+        <div class="container px-6 py-4 mx-auto lg:flex lg:justify-between lg:items-center">
+            <div class="flex flex-col text-center w-full mb-6">
+                <h1 class="text-3xl font-bold mb-1 color03">Featured Apartment</h1>
+                <p class="mx-auto mb-5 leading-relaxed text-xl text-gray-500">The Most frequently searched and most popular apartment of the application will be in the list</p>
+            </div>
+        </div>
+
+        <ul id="lightSlider" class="relative container px-6 py-4 mx-auto">
+            <!--===================   card 01 =====================-->
+            <li class="relative" >
+                <div class="card-slide">
+                    <div id="slide" class="active p-4 flex justify-between items-center w-full">
+                        <div class="shadow-md  rounded-lg card-width pb-4 ">
+                        <div style="background-image: url(./img/Mask\ Group\ 4.png);" class=" card-bg h-64 bg-gray-200 bg-cover bg-center rounded-t-lg flex items-start justify-around"> 
+                            <p class=" opacity-0 invisible text-white mt-3 font-bold bg-gray-500 rounded-full px-3 py-1">1.2 km away</p>
+                            <button id="mlButton" type="submit" class="opacity-0 invisible mt-3 px-3 py-1 font-normal tracking-wide text-white capitalize transform bg-green-400 rounded-md focus:outline-none">
+                                For rent
+                            </button>
+                        </div>
+                        <div class="bg-white rounded-b-lg px-8">
+                            <div class="relative">
+                                <img id="user" class="right-0 w-12 h-12 rounded-full shadow-2xl absolute -mt-8" src="http://tailwindtemplates.io/wp-content/uploads/2019/03/link.jpg" alt="Avatar">
+                            </div>
+                            <div class="pt-1 pb-1">
+                            <p class="text-sm text-gray-600"> <i style="color: #fe7847;" class="fas fa-map-marker-alt"></i> Knightsbridge</p>
+                            <h1 style="color: #1e62e8;" class="font-bold text-xl">$2,500</h1>
+                            <h2 class="font-bold text-xl">Apartment London</h2>
+                            <p style="font-size: 12px;" class=" text-gray-600">Beautiful Huge 1 Family House In Heart Of Westbury Newly Renovated With New Furniture</p>
+                                <div class="flex justify-around mt-8">
+                                    <div class="flex justify-around bg-gray-100 rounded-lg py-2">
+                                        <div class="card-icons px-2">
+                                            <span><span  style="color: #1e62e8;" class=" font-bold">2</span> <i class="fas fa-bed text-gray-600"></i></span>
+                                            <p style="font-size: 12px;" class="text-gray-600 pt-2">Bedrooms</p>
+                                        </div>
+                                        <div class="card-icons px-2">
+                                            <span ><span  style="color: #1e62e8;" class="font-bold">2</span> <i class="fas fa-bath text-gray-600"></i></span>
+                                            <p style="font-size: 12px;" class="text-gray-600 pt-2">Bathrooms</p>
+                                        </div>
+                                        <div class="card-icons px-2">
+                                            <span><span  style="color: #1e62e8;" class="font-bold">1176</span> <i class="fas fa-vector-square text-gray-600"></i></span>
+                                            <p style="font-size: 12px;" class="text-gray-600 pt-2 ">Squre Ft</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-icons flex items-center justify-end">
+                                        <i style="width: 25px; height: 25px;" class="far fa-plus-square mr-1 p-4 text-xl bg-gray-200 flex items-center justify-center rounded-md "></i>
+                                        <i style="width: 25px; height: 25px; background: #fe7847;" class="far fa-heart text-white mr-1 p-4 text-xl bg flex items-center justify-center rounded-md "></i>
+                                        <i style="width: 25px; height: 25px;" class="far fa-square p-4 text-xl bg-gray-200 flex items-center justify-center rounded-md"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div> 
+
+
+                    </div>
+                </div>
+            </li>
+            <!--===================   card 02 =====================-->
+            <li class="relative">
+                <div class="card-slide">
+                    <div id="slide" class="active p-4 flex justify-between items-center w-full">
+                        <div class="shadow-md  rounded-lg card-width pb-4 ">
+                        <div style="background-image: url(./img/Mask\ Group\ 4.png);" class=" card-bg h-64 bg-gray-200 bg-cover bg-center rounded-t-lg flex items-start justify-around"> 
+                            <p class=" opacity-0 invisible text-white mt-3 font-bold bg-gray-500 rounded-full px-3 py-1">1.2 km away</p>
+                            <button id="mlButton" type="submit" class="opacity-0 invisible mt-3 px-3 py-1 font-normal tracking-wide text-white capitalize transform bg-green-400 rounded-md focus:outline-none">
+                                For rent
+                            </button>
+                        </div>
+                        <div class="bg-white rounded-b-lg px-8">
+                            <div class="relative">
+                                <img id="user" class="right-0 w-12 h-12 rounded-full shadow-2xl absolute -mt-8" src="http://tailwindtemplates.io/wp-content/uploads/2019/03/link.jpg" alt="Avatar">
+                            </div>
+                            <div class="pt-1 pb-1">
+                            <p class="text-sm text-gray-600"> <i style="color: #fe7847;" class="fas fa-map-marker-alt"></i> Knightsbridge</p>
+                            <h1 style="color: #1e62e8;" class="font-bold text-xl">$2,500</h1>
+                            <h2 class="font-bold text-xl">Apartment London</h2>
+                            <p style="font-size: 12px;" class=" text-gray-600">Beautiful Huge 1 Family House In Heart Of Westbury Newly Renovated With New Furniture</p>
+                                <div class="flex justify-around mt-8">
+                                    <div class="flex justify-around bg-gray-100 rounded-lg py-2">
+                                        <div class="card-icons px-2">
+                                            <span><span  style="color: #1e62e8;" class=" font-bold">2</span> <i class="fas fa-bed text-gray-600"></i></span>
+                                            <p style="font-size: 12px;" class="text-gray-600 pt-2">Bedrooms</p>
+                                        </div>
+                                        <div class="card-icons px-2">
+                                            <span ><span  style="color: #1e62e8;" class="font-bold">2</span> <i class="fas fa-bath text-gray-600"></i></span>
+                                            <p style="font-size: 12px;" class="text-gray-600 pt-2">Bathrooms</p>
+                                        </div>
+                                        <div class="card-icons px-2">
+                                            <span><span  style="color: #1e62e8;" class="font-bold">1176</span> <i class="fas fa-vector-square text-gray-600"></i></span>
+                                            <p style="font-size: 12px;" class="text-gray-600 pt-2 ">Squre Ft</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-icons flex items-center justify-end">
+                                        <i style="width: 25px; height: 25px;" class="far fa-plus-square mr-1 p-4 text-xl bg-gray-200 flex items-center justify-center rounded-md "></i>
+                                        <i style="width: 25px; height: 25px; background: #fe7847;" class="far fa-heart text-white mr-1 p-4 text-xl bg flex items-center justify-center rounded-md "></i>
+                                        <i style="width: 25px; height: 25px;" class="far fa-square p-4 text-xl bg-gray-200 flex items-center justify-center rounded-md"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div> 
+
+
+                    </div>
+                </div>
+            </li>
+            <!--===================   card 03 =====================-->
+            <li class="relative">
+                <div class="card-slide">
+                    <div id="slide" class="active p-4 flex justify-between items-center w-full">
+                        <div class="shadow-md  rounded-lg card-width pb-4 ">
+                        <div style="background-image: url(./img/Mask\ Group\ 4.png);" class=" card-bg h-64 bg-gray-200 bg-cover bg-center rounded-t-lg flex items-start justify-around"> 
+                            <p class=" opacity-0 invisible text-white mt-3 font-bold bg-gray-500 rounded-full px-3 py-1">1.2 km away</p>
+                            <button id="mlButton" type="submit" class="opacity-0 invisible mt-3 px-3 py-1 font-normal tracking-wide text-white capitalize transform bg-green-400 rounded-md focus:outline-none">
+                                For rent
+                            </button>
+                        </div>
+                        <div class="bg-white rounded-b-lg px-8">
+                            <div class="relative">
+                                <img id="user" class="right-0 w-12 h-12 rounded-full shadow-2xl absolute -mt-8" src="http://tailwindtemplates.io/wp-content/uploads/2019/03/link.jpg" alt="Avatar">
+                            </div>
+                            <div class="pt-1 pb-1">
+                            <p class="text-sm text-gray-600"> <i style="color: #fe7847;" class="fas fa-map-marker-alt"></i> Knightsbridge</p>
+                            <h1 style="color: #1e62e8;" class="font-bold text-xl">$2,500</h1>
+                            <h2 class="font-bold text-xl">Apartment London</h2>
+                            <p style="font-size: 12px;" class=" text-gray-600">Beautiful Huge 1 Family House In Heart Of Westbury Newly Renovated With New Furniture</p>
+                                <div class="flex justify-around mt-8">
+                                    <div class="flex justify-around bg-gray-100 rounded-lg py-2">
+                                        <div class="card-icons px-2">
+                                            <span><span  style="color: #1e62e8;" class=" font-bold">2</span> <i class="fas fa-bed text-gray-600"></i></span>
+                                            <p style="font-size: 12px;" class="text-gray-600 pt-2">Bedrooms</p>
+                                        </div>
+                                        <div class="card-icons px-2">
+                                            <span ><span  style="color: #1e62e8;" class="font-bold">2</span> <i class="fas fa-bath text-gray-600"></i></span>
+                                            <p style="font-size: 12px;" class="text-gray-600 pt-2">Bathrooms</p>
+                                        </div>
+                                        <div class="card-icons px-2">
+                                            <span><span  style="color: #1e62e8;" class="font-bold">1176</span> <i class="fas fa-vector-square text-gray-600"></i></span>
+                                            <p style="font-size: 12px;" class="text-gray-600 pt-2 ">Squre Ft</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-icons flex items-center justify-end">
+                                        <i style="width: 25px; height: 25px;" class="far fa-plus-square mr-1 p-4 text-xl bg-gray-200 flex items-center justify-center rounded-md "></i>
+                                        <i style="width: 25px; height: 25px; background: #fe7847;" class="far fa-heart text-white mr-1 p-4 text-xl bg flex items-center justify-center rounded-md "></i>
+                                        <i style="width: 25px; height: 25px;" class="far fa-square p-4 text-xl bg-gray-200 flex items-center justify-center rounded-md"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div> 
+
+
+                    </div>
+                </div>
+            </li>
+            <!--===================   card 04 =====================-->
+            <li class="relative">
+                <div class="card-slide">
+                    <div id="slide" class="active p-4 flex justify-between items-center w-full">
+                        <div class="shadow-md  rounded-lg card-width pb-4 ">
+                        <div style="background-image: url(./img/Mask\ Group\ 4.png);" class=" card-bg h-64 bg-gray-200 bg-cover bg-center rounded-t-lg flex items-start justify-around"> 
+                            <p class=" opacity-0 invisible text-white mt-3 font-bold bg-gray-500 rounded-full px-3 py-1">1.2 km away</p>
+                            <button id="mlButton" type="submit" class="opacity-0 invisible mt-3 px-3 py-1 font-normal tracking-wide text-white capitalize transform bg-green-400 rounded-md focus:outline-none">
+                                For rent
+                            </button>
+                        </div>
+                        <div class="bg-white rounded-b-lg px-8">
+                            <div class="relative">
+                                <img id="user" class="right-0 w-12 h-12 rounded-full shadow-2xl absolute -mt-8" src="http://tailwindtemplates.io/wp-content/uploads/2019/03/link.jpg" alt="Avatar">
+                            </div>
+                            <div class="pt-1 pb-1">
+                            <p class="text-sm text-gray-600"> <i style="color: #fe7847;" class="fas fa-map-marker-alt"></i> Knightsbridge</p>
+                            <h1 style="color: #1e62e8;" class="font-bold text-xl">$2,500</h1>
+                            <h2 class="font-bold text-xl">Apartment London</h2>
+                            <p style="font-size: 12px;" class=" text-gray-600">Beautiful Huge 1 Family House In Heart Of Westbury Newly Renovated With New Furniture</p>
+                                <div class="flex justify-around mt-8">
+                                    <div class="flex justify-around bg-gray-100 rounded-lg py-2">
+                                        <div class="card-icons px-2">
+                                            <span><span  style="color: #1e62e8;" class=" font-bold">2</span> <i class="fas fa-bed text-gray-600"></i></span>
+                                            <p style="font-size: 12px;" class="text-gray-600 pt-2">Bedrooms</p>
+                                        </div>
+                                        <div class="card-icons px-2">
+                                            <span ><span  style="color: #1e62e8;" class="font-bold">2</span> <i class="fas fa-bath text-gray-600"></i></span>
+                                            <p style="font-size: 12px;" class="text-gray-600 pt-2">Bathrooms</p>
+                                        </div>
+                                        <div class="card-icons px-2">
+                                            <span><span  style="color: #1e62e8;" class="font-bold">1176</span> <i class="fas fa-vector-square text-gray-600"></i></span>
+                                            <p style="font-size: 12px;" class="text-gray-600 pt-2 ">Squre Ft</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-icons flex items-center justify-end">
+                                        <i style="width: 25px; height: 25px;" class="far fa-plus-square mr-1 p-4 text-xl bg-gray-200 flex items-center justify-center rounded-md "></i>
+                                        <i style="width: 25px; height: 25px; background: #fe7847;" class="far fa-heart text-white mr-1 p-4 text-xl bg flex items-center justify-center rounded-md "></i>
+                                        <i style="width: 25px; height: 25px;" class="far fa-square p-4 text-xl bg-gray-200 flex items-center justify-center rounded-md"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div> 
+
+
+                    </div>
+                </div>
+            </li>
+            <!--===================   card 05 =====================-->
+            <li class="relative">
+                <div class="card-slide">
+                    <div id="slide" class="active p-4 flex justify-between items-center w-full">
+                        <div class="shadow-md  rounded-lg card-width pb-4 ">
+                        <div style="background-image: url(./img/Mask\ Group\ 4.png);" class=" card-bg h-64 bg-gray-200 bg-cover bg-center rounded-t-lg flex items-start justify-around"> 
+                            <p class=" opacity-0 invisible text-white mt-3 font-bold bg-gray-500 rounded-full px-3 py-1">1.2 km away</p>
+                            <button id="mlButton" type="submit" class="opacity-0 invisible mt-3 px-3 py-1 font-normal tracking-wide text-white capitalize transform bg-green-400 rounded-md focus:outline-none">
+                                For rent
+                            </button>
+                        </div>
+                        <div class="bg-white rounded-b-lg px-8">
+                            <div class="relative">
+                                <img id="user" class="right-0 w-12 h-12 rounded-full shadow-2xl absolute -mt-8" src="http://tailwindtemplates.io/wp-content/uploads/2019/03/link.jpg" alt="Avatar">
+                            </div>
+                            <div class="pt-1 pb-1">
+                            <p class="text-sm text-gray-600"> <i style="color: #fe7847;" class="fas fa-map-marker-alt"></i> Knightsbridge</p>
+                            <h1 style="color: #1e62e8;" class="font-bold text-xl">$2,500</h1>
+                            <h2 class="font-bold text-xl">Apartment London</h2>
+                            <p style="font-size: 12px;" class=" text-gray-600">Beautiful Huge 1 Family House In Heart Of Westbury Newly Renovated With New Furniture</p>
+                                <div class="flex justify-around mt-8">
+                                    <div class="flex justify-around bg-gray-100 rounded-lg py-2">
+                                        <div class="card-icons px-2">
+                                            <span><span  style="color: #1e62e8;" class=" font-bold">2</span> <i class="fas fa-bed text-gray-600"></i></span>
+                                            <p style="font-size: 12px;" class="text-gray-600 pt-2">Bedrooms</p>
+                                        </div>
+                                        <div class="card-icons px-2">
+                                            <span ><span  style="color: #1e62e8;" class="font-bold">2</span> <i class="fas fa-bath text-gray-600"></i></span>
+                                            <p style="font-size: 12px;" class="text-gray-600 pt-2">Bathrooms</p>
+                                        </div>
+                                        <div class="card-icons px-2">
+                                            <span><span  style="color: #1e62e8;" class="font-bold">1176</span> <i class="fas fa-vector-square text-gray-600"></i></span>
+                                            <p style="font-size: 12px;" class="text-gray-600 pt-2 ">Squre Ft</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-icons flex items-center justify-end">
+                                        <i style="width: 25px; height: 25px;" class="far fa-plus-square mr-1 p-4 text-xl bg-gray-200 flex items-center justify-center rounded-md "></i>
+                                        <i style="width: 25px; height: 25px; background: #fe7847;" class="far fa-heart text-white mr-1 p-4 text-xl bg flex items-center justify-center rounded-md "></i>
+                                        <i style="width: 25px; height: 25px;" class="far fa-square p-4 text-xl bg-gray-200 flex items-center justify-center rounded-md"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div> 
+
+
+                    </div>
+                </div>
+            </li>
+            <!--===================   card 06 =====================-->
+            <li class="relative">
+                <div class="card-slide">
+                    <div id="slide" class="active p-4 flex justify-between items-center w-full">
+                        <div class="shadow-md  rounded-lg card-width pb-4 ">
+                        <div style="background-image: url(./img/Mask\ Group\ 4.png);" class=" card-bg h-64 bg-gray-200 bg-cover bg-center rounded-t-lg flex items-start justify-around"> 
+                            <p class=" opacity-0 invisible text-white mt-3 font-bold bg-gray-500 rounded-full px-3 py-1">1.2 km away</p>
+                            <button id="mlButton" type="submit" class="opacity-0 invisible mt-3 px-3 py-1 font-normal tracking-wide text-white capitalize transform bg-green-400 rounded-md focus:outline-none">
+                                For rent
+                            </button>
+                        </div>
+                        <div class="bg-white rounded-b-lg px-8">
+                            <div class="relative">
+                                <img id="user" class="right-0 w-12 h-12 rounded-full shadow-2xl absolute -mt-8" src="http://tailwindtemplates.io/wp-content/uploads/2019/03/link.jpg" alt="Avatar">
+                            </div>
+                            <div class="pt-1 pb-1">
+                            <p class="text-sm text-gray-600"> <i style="color: #fe7847;" class="fas fa-map-marker-alt"></i> Knightsbridge</p>
+                            <h1 style="color: #1e62e8;" class="font-bold text-xl">$2,500</h1>
+                            <h2 class="font-bold text-xl">Apartment London</h2>
+                            <p style="font-size: 12px;" class=" text-gray-600">Beautiful Huge 1 Family House In Heart Of Westbury Newly Renovated With New Furniture</p>
+                                <div class="flex justify-around mt-8">
+                                    <div class="flex justify-around bg-gray-100 rounded-lg py-2">
+                                        <div class="card-icons px-2">
+                                            <span><span  style="color: #1e62e8;" class=" font-bold">2</span> <i class="fas fa-bed text-gray-600"></i></span>
+                                            <p style="font-size: 12px;" class="text-gray-600 pt-2">Bedrooms</p>
+                                        </div>
+                                        <div class="card-icons px-2">
+                                            <span ><span  style="color: #1e62e8;" class="font-bold">2</span> <i class="fas fa-bath text-gray-600"></i></span>
+                                            <p style="font-size: 12px;" class="text-gray-600 pt-2">Bathrooms</p>
+                                        </div>
+                                        <div class="card-icons px-2">
+                                            <span><span  style="color: #1e62e8;" class="font-bold">1176</span> <i class="fas fa-vector-square text-gray-600"></i></span>
+                                            <p style="font-size: 12px;" class="text-gray-600 pt-2 ">Squre Ft</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-icons flex items-center justify-end">
+                                        <i style="width: 25px; height: 25px;" class="far fa-plus-square mr-1 p-4 text-xl bg-gray-200 flex items-center justify-center rounded-md "></i>
+                                        <i style="width: 25px; height: 25px; background: #fe7847;" class="far fa-heart text-white mr-1 p-4 text-xl bg flex items-center justify-center rounded-md "></i>
+                                        <i style="width: 25px; height: 25px;" class="far fa-square p-4 text-xl bg-gray-200 flex items-center justify-center rounded-md"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div> 
+
+
+                    </div>
+                </div>
+            </li>
+            <!--===================   card 07 =====================-->
+            <li class="relative">
+                <div class="card-slide">
+                    <div id="slide" class="active p-4 flex justify-between items-center w-full">
+                        <div class="shadow-md  rounded-lg card-width pb-4 ">
+                        <div style="background-image: url(./img/Mask\ Group\ 4.png);" class=" card-bg h-64 bg-gray-200 bg-cover bg-center rounded-t-lg flex items-start justify-around"> 
+                            <p class=" opacity-0 invisible text-white mt-3 font-bold bg-gray-500 rounded-full px-3 py-1">1.2 km away</p>
+                            <button id="mlButton" type="submit" class="opacity-0 invisible mt-3 px-3 py-1 font-normal tracking-wide text-white capitalize transform bg-green-400 rounded-md focus:outline-none">
+                                For rent
+                            </button>
+                        </div>
+                        <div class="bg-white rounded-b-lg px-8">
+                            <div class="relative">
+                                <img id="user" class="right-0 w-12 h-12 rounded-full shadow-2xl absolute -mt-8" src="http://tailwindtemplates.io/wp-content/uploads/2019/03/link.jpg" alt="Avatar">
+                            </div>
+                            <div class="pt-1 pb-1">
+                            <p class="text-sm text-gray-600"> <i style="color: #fe7847;" class="fas fa-map-marker-alt"></i> Knightsbridge</p>
+                            <h1 style="color: #1e62e8;" class="font-bold text-xl">$2,500</h1>
+                            <h2 class="font-bold text-xl">Apartment London</h2>
+                            <p style="font-size: 12px;" class=" text-gray-600">Beautiful Huge 1 Family House In Heart Of Westbury Newly Renovated With New Furniture</p>
+                                <div class="flex justify-around mt-8">
+                                    <div class="flex justify-around bg-gray-100 rounded-lg py-2">
+                                        <div class="card-icons px-2">
+                                            <span><span  style="color: #1e62e8;" class=" font-bold">2</span> <i class="fas fa-bed text-gray-600"></i></span>
+                                            <p style="font-size: 12px;" class="text-gray-600 pt-2">Bedrooms</p>
+                                        </div>
+                                        <div class="card-icons px-2">
+                                            <span ><span  style="color: #1e62e8;" class="font-bold">2</span> <i class="fas fa-bath text-gray-600"></i></span>
+                                            <p style="font-size: 12px;" class="text-gray-600 pt-2">Bathrooms</p>
+                                        </div>
+                                        <div class="card-icons px-2">
+                                            <span><span  style="color: #1e62e8;" class="font-bold">1176</span> <i class="fas fa-vector-square text-gray-600"></i></span>
+                                            <p style="font-size: 12px;" class="text-gray-600 pt-2 ">Squre Ft</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-icons flex items-center justify-end">
+                                        <i style="width: 25px; height: 25px;" class="far fa-plus-square mr-1 p-4 text-xl bg-gray-200 flex items-center justify-center rounded-md "></i>
+                                        <i style="width: 25px; height: 25px; background: #fe7847;" class="far fa-heart text-white mr-1 p-4 text-xl bg flex items-center justify-center rounded-md "></i>
+                                        <i style="width: 25px; height: 25px;" class="far fa-square p-4 text-xl bg-gray-200 flex items-center justify-center rounded-md"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div> 
+
+
+                    </div>
+                </div>
+            </li>
+            <span class="sRight absolute  cursor-pointer"> <i class="fas fa-angle-right text-4xl"></i> </span>
+            <span class="sLeft absolute  cursor-pointer"> <i class="fas fa-angle-left text-4xl"></i> </span>
+        </ul>
+
+    </section>
+    <!-- =================  Apartment Plans section start ================= -->
+    <section id="Plans" style="background-color: #f4f7fa;">
+        <div class="inner-plan  container px-5 py-24 mx-auto relative">
+            <div class="hadding flex flex-col text-center w-full mb-6">
+                <h1 class="text-3xl font-bold mb-1 color03">Apartment Plans</h1>
+            </div>
+            <div class="menu pb-8">
+                <ul id="plan-ul" class="list-none text-center">
+                    <li class="inline  text-black p-5 cursor-pointer">The Studio</li>
+                    <li class="inline  text-black p-5 cursor-pointer">Deluxe Portion</li>
+                    <li class="inline  text-black p-5 cursor-pointer">Penthouse</li>
+                    <li class="inline  text-black p-5 cursor-pointer">Top Garden</li>
+                    <li class="inline  text-black p-5 cursor-pointer">Double Height</li>
+                </ul>
+            </div>
+            <div id="planItemas" class="all-items ">
+                <div class="absolute shadow-sm rounded-md  items bg-white flex justify-around p-8">
+                    <div class="left-info  w-2/4 flex items-center">
+                        <div class="inner-left p-10 text-white rounded-md" style="background-color: #186aa5;">
+                            <h2 class="text-2xl font-bold mb-1">Deluxe Portion 01</h2>
+                            <p class="text-sm space-y-2">Boasting chic interiors, three private balconies and a remarkable terrace, this two bedroom apartment will epitomise complete luxury. Not only will residents benefit from a superb location in the heart of Shoreditch, but they will also enjoy unrivalled facilities and a 24-hour bespoke concierge.</p>
+                            <ul class="plan-card">
+                                <li class="text-base leading-7">Total Area<span class="px-3"> …………………………...………..</span>2800 Sq. Ft</li>
+                                <li class="text-base leading-7">Bedroom <span class="px-3">…………………………..…….…..</span> 2800 Sq. Ft</li>
+                                <li class="text-base leading-7">Bathroom <span class="px-3">…………………………..………..</span>2800 Sq. Ft</li>
+                                <li class="text-base leading-7">Smoking/ pets<span class="px-3">…………………………..….....</span>2800 Sq. Ft</li>
+                                <li class="text-base leading-7">Lounge<span class="px-3">…………………………..………</span>2800 Sq. Ft</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right-curve w-2/5 flex items-center">
+                        <img class="w-11/12" src="./img/Image 6.png" alt="#">
+                    </div>
+                </div>
+                <div class="absolute shadow-sm rounded-md items bg-white flex justify-around p-8">
+                    <div class="left-info w-2/4 flex items-center">
+                        <div class="inner-left p-10 text-white rounded-md" style="background-color: #186aa5;">
+                            <h2 class="text-2xl font-bold mb-1">Deluxe Portion 02</h2>
+                            <p class="text-sm space-y-2">Boasting chic interiors, three private balconies and a remarkable terrace, this two bedroom apartment will epitomise complete luxury. Not only will residents benefit from a superb location in the heart of Shoreditch, but they will also enjoy unrivalled facilities and a 24-hour bespoke concierge.</p>
+                            <ul class="">
+                                <li class="text-base leading-7">Total Area<span class="px-3"> …………………………...………..</span>2800 Sq. Ft</li>
+                                <li class="text-base leading-7">Bedroom <span class="px-3">…………………………..…….…..</span> 2800 Sq. Ft</li>
+                                <li class="text-base leading-7">Bathroom <span class="px-3">…………………………..………..</span>2800 Sq. Ft</li>
+                                <li class="text-base leading-7">Smoking/ pets<span class="px-3">…………………………..….....</span>2800 Sq. Ft</li>
+                                <li class="text-base leading-7">Lounge<span class="px-3">…………………………..………</span>2800 Sq. Ft</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right-curve w-2/5 flex items-center">
+                        <img class="w-11/12" src="./img/Image 6.png" alt="#">
+                    </div>
+                </div>
+                <div class="absolute shadow-sm rounded-md items bg-white flex justify-around p-8">
+                    <div class="left-info w-2/4 flex items-center">
+                        <div class="inner-left p-10 text-white rounded-md" style="background-color: #186aa5;">
+                            <h2 class="text-2xl font-bold mb-1">Deluxe Portion 03</h2>
+                            <p class="text-sm space-y-2">Boasting chic interiors, three private balconies and a remarkable terrace, this two bedroom apartment will epitomise complete luxury. Not only will residents benefit from a superb location in the heart of Shoreditch, but they will also enjoy unrivalled facilities and a 24-hour bespoke concierge.</p>
+                            <ul class="">
+                                <li class="text-base leading-7">Total Area<span class="px-3"> …………………………...………..</span>2800 Sq. Ft</li>
+                                <li class="text-base leading-7">Bedroom <span class="px-3">…………………………..…….…..</span> 2800 Sq. Ft</li>
+                                <li class="text-base leading-7">Bathroom <span class="px-3">…………………………..………..</span>2800 Sq. Ft</li>
+                                <li class="text-base leading-7">Smoking/ pets<span class="px-3">…………………………..….....</span>2800 Sq. Ft</li>
+                                <li class="text-base leading-7">Lounge<span class="px-3">…………………………..………</span>2800 Sq. Ft</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right-curve w-2/5 flex items-center">
+                        <img class="w-11/12" src="./img/Image 6.png" alt="#">
+                    </div>
+                </div>
+                <div class="absolute shadow-sm rounded-md items bg-white flex justify-around p-8">
+                    <div class="left-info w-2/4 flex items-center">
+                        <div class="inner-left p-10 text-white rounded-md" style="background-color: #186aa5;">
+                            <h2 class="text-2xl font-bold mb-1">Deluxe Portion 04</h2>
+                            <p class="text-sm space-y-2">Boasting chic interiors, three private balconies and a remarkable terrace, this two bedroom apartment will epitomise complete luxury. Not only will residents benefit from a superb location in the heart of Shoreditch, but they will also enjoy unrivalled facilities and a 24-hour bespoke concierge.</p>
+                            <ul class="">
+                                <li class="text-base leading-7">Total Area<span class="px-3"> …………………………...………..</span>2800 Sq. Ft</li>
+                                <li class="text-base leading-7">Bedroom <span class="px-3">…………………………..…….…..</span> 2800 Sq. Ft</li>
+                                <li class="text-base leading-7">Bathroom <span class="px-3">…………………………..………..</span>2800 Sq. Ft</li>
+                                <li class="text-base leading-7">Smoking/ pets<span class="px-3">…………………………..….....</span>2800 Sq. Ft</li>
+                                <li class="text-base leading-7">Lounge<span class="px-3">…………………………..………</span>2800 Sq. Ft</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right-curve w-2/5 flex items-center">
+                        <img class="w-11/12" src="./img/Image 6.png" alt="#">
+                    </div>
+                </div>
+                <div class="absolute shadow-sm rounded-md items bg-white flex justify-around p-8">
+                    <div class="left-info w-2/4 flex items-center">
+                        <div class="inner-left p-10 text-white rounded-md" style="background-color: #186aa5;">
+                            <h2 class="text-2xl font-bold mb-1">Deluxe Portion 05</h2>
+                            <p class="text-sm space-y-2">Boasting chic interiors, three private balconies and a remarkable terrace, this two bedroom apartment will epitomise complete luxury. Not only will residents benefit from a superb location in the heart of Shoreditch, but they will also enjoy unrivalled facilities and a 24-hour bespoke concierge.</p>
+                            <ul class="">
+                                <li class="text-base leading-7">Total Area<span class="px-3"> …………………………...………..</span>2800 Sq. Ft</li>
+                                <li class="text-base leading-7">Bedroom <span class="px-3">…………………………..…….…..</span> 2800 Sq. Ft</li>
+                                <li class="text-base leading-7">Bathroom <span class="px-3">…………………………..………..</span>2800 Sq. Ft</li>
+                                <li class="text-base leading-7">Smoking/ pets<span class="px-3">…………………………..….....</span>2800 Sq. Ft</li>
+                                <li class="text-base leading-7">Lounge<span class="px-3">…………………………..………</span>2800 Sq. Ft</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right-curve w-2/5 flex items-center">
+                        <img class="w-11/12" src="./img/Image 6.png" alt="#">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <!-- =================  Dream Apartment section stats ================= -->
+    <section id="dreamApartment">
+        <div class="inner-drem container px-5 py-24 mx-auto w-full flex justify-between relative">
+            <div class="leftInner w-2/6 flex items-end">
+                <div class="left-inner02">
+                    <h1 class="leading-10 text-3xl font-bold mb-1 color03">Buy</h1>
+                    <p class="leading-10 text-3xl font-bold mb-1 color03">Dream Apartment</p>
+                    <p class="leading-10 text-3xl font-bold mb-1 color03">In <span style="color: #1e62e8;;">Prime location</span></p>
+                    <div class="button mt-6">
+                        <button id="mlButton" type="submit" class=" px-2 w-40 py-3 font-semibold tracking-wide text-white capitalize transition-colors duration-200 transform bg-primary2 rounded-md hover:bg-indigo-500 focus:outline-none">
+                            See All Apartment
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="rightInner w-2/4">
+                <div>
+                    <img class="rounded-lg"  src="./img/image-7.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="doded absolute">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="absolute pimg">
+                <img  src="./img/delux.png" alt="#">
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!-- =================  featured Apartment section starts ================= -->
+    <section id="featured" class="bg-gray-100">
+        <div class="innerFeature container px-5 py-24 mx-auto w-full ">
+            <div class="top text-center pb-6">
+                <h1 class="text-blue-500">Apartments</h1>
+                <h2 class="text-3xl font-bold mb-1 color03 ">Featured Listings</h2>
+            </div>
+            <div class="lest grid grid-cols-4 grid-rows-2 justify-items-center gap-4 w-full ">
+                <div class=" h-32 bg-white shadow-sm p-4 flex justify-center items-center flex-col hover:bg-blue-500 rounded-lg transition duration-500">
+                    <span> <i class="fas fa-car text-3xl text-blue-500"></i> </span>
+                    <p class="font-bold text-blue-900">Parking Space</p>
+                </div>
+                <div class=" h-32 bg-white shadow-sm p-4 flex justify-center items-center flex-col hover:bg-blue-500 rounded-lg transition duration-500">
+                    <span> <i class="fas fa-swimming-pool text-3xl text-blue-500"></i> </span>
+                    <p class="font-bold text-blue-900">Swinning Poll</p>
+                </div>
+                <div class=" h-32 bg-white shadow-sm p-4 flex justify-center items-center flex-col hover:bg-blue-500 rounded-lg transition duration-500">
+                    <span> <i class="fas fa-passport text-3xl text-blue-500"></i> </span>
+                    <p class="font-bold text-blue-900">Private Security</p>
+                </div>
+                <div class=" h-32 bg-white shadow-sm p-4 flex justify-center items-center flex-col hover:bg-blue-500 rounded-lg transition duration-500">
+                    <span> <i class="fas fa-stethoscope text-3xl text-blue-500"></i> </span>
+                    <p class="font-bold text-blue-900">Medical Center</p>
+                </div>
+                <div class=" h-32 bg-white shadow-sm p-4 flex justify-center items-center flex-col hover:bg-blue-500 rounded-lg transition duration-500">
+                    <span> <i class="fab fa-accusoft text-3xl text-blue-500"></i> </span>
+                    <p class="font-bold text-blue-900">Library Area</p>
+                </div>
+                <div class=" h-32 bg-white shadow-sm p-4 flex justify-center items-center flex-col hover:bg-blue-500 rounded-lg transition duration-500">
+                    <span> <i class="fas fa-bed text-3xl text-blue-500"></i> </span>
+                    <p class="font-bold text-blue-900">King Size Beds</p>
+                </div>
+                <div class=" h-32 bg-white shadow-sm p-4 flex justify-center items-center flex-col hover:bg-blue-500 rounded-lg transition duration-500">
+                    <span> <i class="fas fa-home text-3xl text-blue-500"></i> </span>
+                    <p class="font-bold text-blue-900">Smart Home</p>
+                </div>
+                <div class=" h-32 bg-white shadow-sm p-4 flex justify-center items-center flex-col hover:bg-blue-500 rounded-lg transition duration-500">
+                    <span> <i class="fas fa-child text-3xl text-blue-500"></i> </span>
+                    <p class="font-bold text-blue-900">Kids Playland</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =================  featured Apartment section starts================= -->
+<section id="asked">
+    <div class="inner container px-5 py-24 mx-auto w-full ">
+        <h1 class="text-3xl font-bold mb-1 color03 text-center pb-10">Frequently Asked Questions</h1>
+        <div class="list">
+            <div id="faq-item" class="inner bg-gray-50 shadow-md p-4 rounded-md mb-6">
+                <div class="haddig flex justify-between cursor-pointer">
+                    <span class=" text-blue-900 font-bold">What the First Step of the Dream Apartment buying process ?</span>
+                    <span id="icon-faq"> <i class="fas fa-plus text-gray-500"></i></span>
+                    <!-- <span> <i class="fas fa-minus text-gray-900"></i></span> -->
+                </div>
+                <p class="text-sm text-gray-500">First, you need to know how much you can borrow, knowing how much home you can afford narrows down online apartment searching to suitable Properties , thus no time is Wasted  considering apartment that are not within your dream and budget.</p>
+            </div>
+            <div id="faq-item" class="inner bg-gray-50 shadow-md p-4 rounded-md mb-6">
+                <div class="haddig flex justify-between cursor-pointer">
+                    <span class=" text-blue-900 font-bold">How Long does It take to buy Apartment ?</span>
+                    <span id="icon-faq"> <i class="fas fa-plus text-gray-500"></i></span>
+                    <!-- <span> <i class="fas fa-minus text-gray-900"></i></span> -->
+                </div>
+                <p class="text-sm text-gray-500">First, you need to know how much you can borrow, knowing how much home you can afford narrows down online apartment searching to suitable Properties , thus no time is Wasted  considering apartment that are not within your dream and budget.</p>
+            </div>
+            <div id="faq-item" class="inner bg-gray-50 shadow-md p-4 rounded-md mb-6">
+                <div class="haddig flex justify-between cursor-pointer">
+                    <span class=" text-blue-900 font-bold">How much do I need for a down payment ?</span>
+                    <span id="icon-faq"> <i class="fas fa-plus text-gray-500"></i></span>
+                    <!-- <span> <i class="fas fa-minus text-gray-900"></i></span> -->
+                </div>
+                <p class="text-sm text-gray-500">First, you need to know how much you can borrow, knowing how much home you can afford narrows down online apartment searching to suitable Properties , thus no time is Wasted  considering apartment that are not within your dream and budget.</p>
+            </div>
+            <div id="faq-item" class="inner bg-gray-50 shadow-md p-4 rounded-md mb-6">
+                <div class="haddig flex justify-between cursor-pointer">
+                    <span class=" text-blue-900 font-bold">What is a buyer's market ?</span>
+                    <span id="icon-faq"> <i class="fas fa-plus text-gray-500"></i></span>
+                    <!-- <span> <i class="fas fa-minus text-gray-900"></i></span> -->
+                </div>
+                <p class="text-sm text-gray-500">First, you need to know how much you can borrow, knowing how much home you can afford narrows down online apartment searching to suitable Properties , thus no time is Wasted  considering apartment that are not within your dream and budget.</p>
+            </div>
+            <div id="faq-item" class="inner bg-gray-50 shadow-md p-4 rounded-md mb-6">
+                <div class="haddig flex justify-between cursor-pointer">
+                    <span class=" text-blue-900 font-bold">What is popular in  Apartment ?</span>
+                    <span id="icon-faq"> <i class="fas fa-plus text-gray-500"></i></span>
+                    <!-- <span> <i class="fas fa-minus text-gray-900"></i></span> -->
+                </div>
+                <p class="text-sm text-gray-500">First, you need to know how much you can borrow, knowing how much home you can afford narrows down online apartment searching to suitable Properties , thus no time is Wasted  considering apartment that are not within your dream and budget.</p>
+            </div>
+        </div>
+</section>
+
+<footer id="footer">
+    <div class="footer-top" style="background-color:  #14395b;">
+        <div class="inner container px-5 mx-auto w-full ">
+            <div class="top grid grid-cols-4 py-5 ">
+                <div class="log">
+                    <div class="footer-img w-4/5 pb-3">
+                        <img src="./img/Group 9738.png" alt="">
+                    </div>
+                    <p class="text-sm text-white"> The most beautiful exclusive properties <br>  and luxury apartments</p>
+                    <ul class="list-none pt-3 logo-items">
+                        <li class="inline-block mr-4 bg-white p-2 rounded-full text-xl w-10 text-center leading-6 h-10 hover:bg-blue-500 cursor-pointer hover:text-white transition "> <i class="fab fa-facebook-f"></i> </li>
+                        <li class="inline-block mr-4 bg-white p-2 rounded-full text-xl w-10 text-center leading-6 h-10 hover:bg-blue-500 cursor-pointer hover:text-white transition "> <i class="fab fa-instagram"></i> </li>
+                        <li class="inline-block mr-4 bg-white p-2 rounded-full text-xl w-10 text-center leading-6 h-10 hover:bg-blue-500 cursor-pointer hover:text-white transition "> <i class=" fab fa-twitter"></i> </li>
+                        <li class="inline-block mr-4 bg-white p-2 rounded-full text-xl w-10 text-center leading-6 h-10 hover:bg-blue-500 cursor-pointer hover:text-white transition "> <i class="fab fa-telegram"></i> </li>
+                    </ul>
+                </div>
+                <div class="usefulLinks">
+                    <h1 class="text-white font-bold text-xl py-3">Useful Links</h1>
+                    <ul class="">
+                        <li class="text-white py-3">About</li>
+                        <li class="text-white py-3">Partners</li>
+                        <li class="text-white py-3">Contact</li>
+                    </ul>
+                </div>
+                <div class="help">
+                    <h1 class="text-white font-bold text-xl py-3">Help?</h1>
+                    <ul class="text-white">
+                        <li class="text-white py-3">FAQ</li>
+                        <li class="text-white py-3">Term & Conditi0on</li>
+                        <li class="text-white py-3">Policy</li>
+                        <li class="text-white py-3">Privacy</li>
+                    </ul>
+                </div>
+                <div class="address">
+                    <h1 class="text-white font-bold text-xl py-3">Address</h1>
+                    <ul class="">
+                        <li class="text-white py-3">113-115 Old Brompton Road</li>
+                        <li class="text-white py-3">SW7 3LE LONDON, UNITED KINGDOM</li>
+                        <li class="text-white py-3">website :www.mordern.com</li>
+                        <li class="text-white py-3">mobie</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-buttom" style="background-color: #0b2f50;">
+        <div class="buttom grid grid-cols-4 py-5 justify-between inner container px-5 mx-auto w-full">
+            <div class="text-white">© Copyright 2021, morden.com</div>
+            <div></div>
+            <div></div>
+            <div class="text-white ">Terms & Condition    <span class="px-4">|</span>   Privacy Policy</div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="./js/app.js"></script>
+</body>
+</html>

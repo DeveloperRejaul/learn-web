@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+      
+
+            /* Note...*/
+/*Sppess Dara Amra jani bitore bojay */
+/* ar spess na diye judi eksate lika huy. tahuly moluto eyta oy div er sate bojano huy */
+            /* Note...*/
+
+
+
+/* Css    >, +, ~,      Selector */
+
+        .five p{
+            background-color: lightcoral;
+        }
+        .six > p{
+            background-color: lightcoral;
+        }
+            
+        /* .seven + h2 {
+            background: navajowhite;
+        } */
+
+        .seven ~ p {
+            background: navajowhite;
+        }
+
+/* Css    >, +, ~,      Selector */
+
+
+
+
+/* eksate  Ekadik Div select */
+
+        .div1, .div2, .div3, .div4{
+            height: 200px;
+            width: 200px;
+            background: khaki;
+            margin-bottom: 3px;
+        }
+
+/* eksate  Ekadik Div select */
+
+
+
+
+
+/* [attribute], [attribute = value], [attribute ~=value]  */
+
+        /* [title]{
+            background: yellow;
+        } */
+        /* h2[title]{
+            background: yellow;
+        } */
+        /* [title=hadding]{
+            background: yellow;
+        } */
+        /* [title~=hadding]{
+            background: yellow;
+        } */
+        p[title~=Help]{
+            background: yellow;
+        }
+
+/* [attribute], [attribute = value], [attribute ~=value]  */
+
+
+
+
+
+/* [attribute ^=value], [attribute $=value] */
+
+     /* [class^="test"]  {
+         background: yellow;
+     }  */
+     [class$="test"]  {
+         background: yellow;
+     } 
+
+/* [attribute ^=value], [attribute $=value] */
+
+
+
+/* Css [attribute |=value], [attribute *=value]  */
+
+.div-09 > [class |="link"]{
+    background: rgb(7, 22, 233);
+}
+
+/* Css [attribute |=value], [attribute *=value]  */
+
+
+
+/* css fast shild and Last Child */
+
+    .one > :last-child{
+        background: red;
+    }
+    .one > :first-child{
+        background: yellow;
+    }
+
+/* css fast shild and Last Child */
+
+
+
+
+
+/* css fast of type and Last of type */
+
+        .two > p:first-of-type{
+            background: yellow;
+        }
+        .two > p:last-of-type{
+            background: yellow;
+        }
+
+/* css fast of type and Last of type */
+
+
+
+
+/* <!-- css nth-child  --> */
+
+        .three :nth-child(3){
+            background: hotpink;
+        }
+        .three > p:nth-of-type(1){
+            background: rgb(11, 214, 11);
+        }
+
+        .three :nth-last-child(4){
+            background: rgb(11, 57, 206);
+        }
+        .three > h1:nth-last-of-type(1){
+            background: rgb(228, 161, 18);
+        }
+
+        /* .four :nth-child(even){
+            background: rgb(216, 101, 101);
+        } */
+
+        /* .four :nth-child(odd){
+            background: rgb(216, 101, 101);
+        } */
+
+        /* .four :nth-child(n){
+            background: rgb(216, 101, 101);
+        } */
+
+        /* .four :nth-child(3n){
+            background: rgb(216, 101, 101);
+        } */
+
+        /* .four :nth-child(3n + 7){
+            background: rgb(216, 101, 101);
+        } */
+
+        /* .four :nth-child(-n+10){
+            background: rgb(216, 101, 101);
+        } */
+
+        /* .four :nth-last-child(-n+10){
+            background: rgb(216, 101, 101);
+        } */
+
+        /* .four > :nth-child(n+5):nth-child(-n+50){
+            border: 1px solid red;
+            margin-bottom: 10px;
+        } */
+
+        .four > :nth-child(n+5):nth-child(even):nth-child(-n+20){
+            border: 1px solid red;
+            margin-bottom: 10px;
+        }
+
+
+/* <!-- css nth-child  --> */

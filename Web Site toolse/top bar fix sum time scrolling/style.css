@@ -1,0 +1,21 @@
+html{
+    scroll-behavior: smooth;
+}
+
+li{
+    padding: 10px 20px;
+}
+.my{
+    transition: .5s;
+}
+.my.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.my.active + .my-02 {
+    padding-top: 47px;
+    background: red;
+}

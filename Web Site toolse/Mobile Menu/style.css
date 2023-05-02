@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+section {
+    background: rgb(63, 55, 55);
+    height: 48px;
+}
+header{
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+h1 {
+    color: white;
+    line-height: 43px;
+}
+a {
+    display: block;
+    color: white;
+    padding: 10px;
+    line-height: 24px;
+}
+ul {
+    list-style: none;
+}
+li {
+    display: inline-block;
+}
+header i.fas {
+    line-height: 3;
+    display: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width:576px) {
+    header i.fas {
+        display: block;
+    }
+    ul {
+        display: none;
+    }
+    .heder-mune.heder-mune-01 li {
+        display: block;
+    }
+    .heder-mune.heder-mune-01 {
+        background: black;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        position: absolute;
+        align-items: center;
+        top: 12%;
+        border-radius: 5px;
+        left: 12%;
+    }
+    .heder-mune.heder-mune-01 a::after {
+        content: "";
+        background: white;
+        height: 1px;
+        display: block;
+        width: 0px;
+        transition: .3s;
+        margin-left: -7px;
+    }
+    .heder-mune.heder-mune-01 li:hover a::after{
+        width: 60px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

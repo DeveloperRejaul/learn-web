@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapel Draw</title>
+    <link rel="stylesheet" href="./Output/tailwind.css">
+</head>
+<body>
+    <div class="hadding text-center p-10">
+        <h1 class="font-bold text-4xl">Rapel Draw Created by Rejaul </h1>
+    </div>
+    <div class="container px-5 w-full flex">
+
+        <div class="left w-1/2 mr-3">
+            <form action="#">
+                <p>Enter All Name</p>
+                <textarea name="textarea" id="textarea" cols="30" rows="12" class="border w-full"></textarea> <br>
+                <button type="button" id="button" class="bg-blue-600 px-2 py-1 rounded-md mt-2 text-white"> Show All Student </button>
+            </form>
+            <ul id="list"></ul>
+        </div>
+        <div class="right w-1/2">
+            <form action="#">
+                <span class=" text-left ">Output Display</span> <br>
+                <input id="display" type="text" disabled="true" value="Tarek Ahmmed" class="border text-center px-4 py-2 font-bold block w-full " ><br>
+                <button id="gave-a-try" type="submit" class=" mx-auto block px-3 rounded-md m-6  bg-green-700 text-white font-bold text-lg ">Give A Try</button>
+            </form>
+            <ul class="p-5 border">
+                <li class="border px-3 py-1 text-left font-bold text-lg "> First Winner: <span id="First-Winner" ></span> </li>
+                <li class="border px-3 py-1 text-left font-bold text-lg mt-2">Second Winner: <span id="Second-Winner"></span> </li>
+                <li class="border px-3 py-1 text-left font-bold text-lg mt-2">Third Winner: <span id="Third-Winner"></span> </li>
+            </ul>
+        </div>
+
+    </div>
+<script src="./app.js"></script>
+
+</body>
+</html>

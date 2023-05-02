@@ -1,0 +1,17 @@
+.ani{
+    background: greenyellow;
+}
+
+
+
+div{
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr) ;
+
+    row-gap: 50px;
+}
+
+button{
+    height: 100px;
+    width: 100px;
+}

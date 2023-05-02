@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.tooltip{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*****************************************************
+                  Tooltip Start
+*******************************************************/
+.tooltip a {
+    background: tomato;
+    color: white;
+    margin-top: 100px;
+    cursor: pointer;
+    padding: 8px;
+    font-size: 22px;
+    font-family: arial;
+    border-radius: 5px;
+    position: relative;
+}
+
+.tooltip a[data-title]:hover::before {
+    content: attr(data-title);
+    position: absolute;
+    top: -47px;
+    display: inline-block;
+    padding: 6px 6px;
+    border-radius: 4px;
+    background: #000;
+    color: #fff;
+    font-size: 16px;
+    white-space: nowrap;
+    left: 0;
+}
+.tooltip a[data-title]:hover::after {
+    content: ' ';
+    position: absolute;
+    top: -16px;
+    left: 15px;
+    border: 8px solid transparent;
+    border-left: 10px solid black;
+    transform: rotate(90deg);
+}
+/*****************************************************
+                Tooltip End
+*******************************************************/
+
+
+
+
+/*****************************************************
+                  Tooltip Start 02
+*******************************************************/
+
+.tooltip-02 a {
+    background: rgb(39, 179, 62);
+    position: relative;
+    display: block;
+    width: 64px;
+    font-size: 15px;
+    color: white;
+    padding: 7px;
+    margin: 43px auto 0 auto;
+    height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.tooltip-02 a span {
+    position: absolute;
+    left: 0px;
+    top: -40px;
+    background: black;
+    white-space: nowrap;
+    padding: 5px;
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tooltip-02 a span::before {
+    content: " ";
+    position: absolute;
+    border: 10px solid transparent;
+    border-left: 10px solid black;
+    transform: rotate(90deg);
+    bottom: -19px;
+    left: 18px;
+}
+.tooltip-02 a:hover span{
+    opacity:1;
+    visibility:visible;
+}
+/*****************************************************
+                  Tooltip Start 02 Ends
+*******************************************************/

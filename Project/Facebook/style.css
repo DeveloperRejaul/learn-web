@@ -1,0 +1,61 @@
+
+.contaier{
+    display: grid;
+    grid-gap: 5px 2px;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+/* for firefox */
+.div01,.div02,.div03{
+    overflow-y: scroll;
+    height: 100vh;
+    scrollbar-color: rgb(255, 255, 255) rgb(194, 146, 146);
+}
+
+
+/* for crome and etc */
+.div01::-webkit-scrollbar,.div02::-webkit-scrollbar,.div03::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgb(194, 146, 146);
+  }
+  
+  .div01::-webkit-scrollbar-thumb,.div02::-webkit-scrollbar-thumb,.div03::-webkit-scrollbar-thumb {
+    background-color: rgb(26, 23, 23) ;
+  }
+
+  .div01::-webkit-scrollbar-button,.div02::-webkit-scrollbar-button,.div03::-webkit-scrollbar-button {
+    background-color: rgb(22, 207, 53) ;
+  }
+  
+  .div01::-webkit-scrollbar-track,.div02::-webkit-scrollbar-track,.div03::-webkit-scrollbar-track {
+    background-color: rgb(115, 62, 238) ;
+  }
+  
+  .div01::-webkit-scrollbar-track-piece,.div02::-webkit-scrollbar-track-piece,.div03::-webkit-scrollbar-track-piece {
+    background-color: rgb(223, 22, 241) ;
+  }
+  
+  .div01::-webkit-scrollbar-corner,.div02::-webkit-scrollbar-corner,.div03::-webkit-scrollbar-corner {
+    background-color: rgb(248, 111, 20) ;
+  }
+  
+  .div01::-webkit-resizer,.div02::-webkit-resizer,.div03::-webkit-resizer{
+    background-color: rgb(255, 0, 0) ;
+  }
+
+  /* ::-webkit-scrollbar              {  }
+  ::-webkit-scrollbar-button       {  }
+  ::-webkit-scrollbar-track        {  }
+  ::-webkit-scrollbar-track-piece  {  }
+  ::-webkit-scrollbar-thumb        {  }
+  ::-webkit-scrollbar-corner       {  }
+  ::-webkit-resizer                {  } */
+
+
+
+
+
+
+
+
+

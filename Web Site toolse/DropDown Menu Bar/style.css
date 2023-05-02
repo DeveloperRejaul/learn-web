@@ -1,0 +1,87 @@
+/* Basick Cood Starts */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(155, 155, 155);
+}
+/* Basick Cood Ends */
+
+/* DropDown Menu Stars */
+.menu-bar{
+    background: rgb(18, 48, 114);
+    display: flex;
+    justify-content: center;
+}
+.menu-bar ul{
+    list-style-type: none;
+}
+.menu-bar > ul > li{
+    float: left;
+    position: relative;
+}
+.menu-bar::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+.menu-bar ul li  a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+.menu-bar ul li:hover{
+    background: linear-gradient(rgb(25, 187, 20), rgb(184, 167, 19) )
+}
+.menu-bar ul ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgb(18, 48, 114);
+    display: none;
+}
+.menu-bar  ul  li:hover > ul{
+    display: block;
+}
+.menu-bar ul ul li{
+    width: 160px;
+    position: relative;
+}
+.menu-bar ul ul li:hover{
+ background: linear-gradient(rgb(187, 7, 31),rgb(216, 85, 9));
+}
+.menu-bar ul ul ul{
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+/* DropDown Menu Ends */
+
+/* Border Part starts */
+.menu-bar ul ul li > a{
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.menu-bar > ul > li > a{
+    border-left: 1px solid #ddd;
+}
+.menu-bar ul > li:nth-child(5){
+    border-right: 1px solid #ddd;
+}
+.menu-bar > ul > li > ul > li:nth-child(3){
+    border-bottom: 1px solid #ddd;
+}
+.menu-bar > ul > li > ul > li > ul > li:nth-child(3){
+    border-bottom: 1px solid #ddd;
+}
+
+/* Border Part Ends */
+
+/* Animation Part Starts */
+.menu-bar ul li{
+    transition: .5s;
+}
+/* Animation Part Ends */

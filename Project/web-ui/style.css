@@ -1,0 +1,325 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.logo img{
+	width: 50%;
+}
+html{
+	font-size: 100%;
+}
+
+/* *********************************************
+			Custom Color Class starts
+************************************************/
+.primary{
+	color: #2289ff;
+}
+.color03{
+	color: #14395b;
+}
+.primary2{
+	color: #186aa5;
+}
+.bg-primary2{
+	background-color: #186aa5;
+}
+/* *********************************************
+			Custom Color Class ends
+************************************************/
+
+
+a span.mr-10 {
+	width: 45px;
+	height: 45px;
+	background-color: #e8ebf4;
+    position:relative;
+}
+a span.mr-10 i {
+	font-size: 24px;
+    color: #2289ff;
+}
+a span.mr-10::before {
+	content: '';
+	position: absolute;
+	top: 9px;
+	right: 9px;
+	width: 13px;
+	height: 13px;
+	background: #FE7847;
+	border-radius: 50%;
+}
+.container button.btn-bg{
+    background-color: #2289ff;
+}
+#mobileMenu.myclass,#mlButton.myclass{
+    display: none;
+}
+.banner-image{
+	width: 70%;
+	height: auto;
+}
+.banner-text.absolute.bg-white.py-4.px-4 {
+	top: 7%;
+	left: 0;
+}
+/* *********************************************
+		Menu bottom line animation start
+************************************************/
+#mobileMenu a{
+	position: relative;
+}
+#mobileMenu a::after{
+	position: absolute;
+	content: "";
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #2289ff;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform 0.5s;
+}
+#mobileMenu a:hover::after {
+	transform: scaleX(1);
+	transform-origin: left;
+  }
+/* *********************************************
+		Menu bottom line animation ends
+************************************************/
+.button-group {
+	left: 0%;
+	bottom: 32%;
+}
+.info .inner-info {
+	bottom: 10%;
+	left: 0%;
+}
+
+/* ***********************************************
+				Check box style start
+*************************************************/
+
+#service input[type="checkbox"]::before{
+	content: "";
+	padding: 10px;
+}
+
+ /* Customize the label (the container) */
+ .chackconten {
+	display: block;
+	position: relative;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .chackconten input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+	position: absolute;
+	top: 0;
+	height: 30px;
+	width: 30px;
+	right: 0;
+	border-radius: 50%;
+}
+  
+  /* On mouse-over, add a grey background color */
+  .chackconten:hover input ~ .checkmark {
+	background-color: rgb(236, 236, 236);
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .chackconten input:checked ~ .checkmark {
+	background-color: #fe7847;
+}
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .chackconten input:checked ~ .checkmark:after {
+	display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .chackconten .checkmark::after {
+	left: 11px;
+	top: 6px;
+	width: 9px;
+	height: 14px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+/* ***********************************************
+				Check box style ends
+*************************************************/
+
+
+
+/* ***********************************************
+				Cards section start
+*************************************************/
+#card-section .card-bg p,
+#card-section .card-bg button{
+	transition: .5s;
+}
+#card-section .card-bg:hover p,
+#card-section .card-bg:hover button{
+	opacity: 1;
+	visibility: visible;
+}
+#user{
+	box-shadow: 1px 10px 12px 0px #bfbfbf;
+}
+#card-section {
+	background-color: #FEFBF3;
+	padding: 50px 0;
+}
+.lSPrev,.lSNext {
+	background: black;
+	border-radius: 3px;
+}
+.lSSlideOuter .lSPager.lSpg > li a {
+	border-radius: 50%;
+	height: 15px;
+	width: 15px;
+}
+#lightSlider {
+	display: flex;
+	overflow: hidden;
+}
+#lightSlider li {
+	transition-property: left;
+	transition: .5s ease-in;
+}
+.card-slide {
+	width: 100%;
+}
+#slide {
+	width: 100%;
+}
+.shadow-md.rounded-lg.card-width.pb-4 {
+	width: 100%;
+}
+/* ***********************************************
+				Cards section ends
+*************************************************/
+#planItemas .items{
+	opacity: 0;
+	visibility: hidden;
+}#planItemas .items.active{
+	opacity: 1;
+	visibility: visible;
+	transition-property: opacity,visibility;
+	transition: .5s;
+}
+#Plans {
+	height: 700px;
+}
+#planItemas .absolute.items{
+	left: 30px;
+	right: 30px;
+}
+#Plans {
+	height: 780px;
+}
+.leftInner{
+	align-items: flex-end;
+}
+.doded span {
+	width: 10px;
+	height: 10px;
+	background: #2289ff;
+	border-radius: 50%;
+	display: inline-block;
+}
+.doded.absolute {
+	display: grid;
+	grid-template: repeat(9,1fr) / repeat(9, 1fr);
+	grid-gap: 25px;
+	left: 40%;
+	top: 6%;
+	z-index: 0;
+}
+.rightInner.w-2\/4 {
+	z-index: 1;
+}
+.absolute.pimg {
+	position: absolute;
+	bottom: 0;
+	right: 35%;
+	z-index: 2;
+}
+#featured .lest div:hover span i,#featured .lest div:hover p{
+	color: white;
+}
+#asked .list #faq-item {
+	height: 80px;
+	overflow: hidden;
+	transition-property: height;
+	transition-duration: .5s;
+}
+#asked .list .inner .haddig{
+	padding: 20px 0;
+}
+#asked .list #faq-item.active{
+	height: 155px;
+	border: 2px solid #186aa536;
+}
+#lightSlider {
+	max-width: 1536px;
+	margin: 0 auto;
+}
+.fas.fa-angle-left.text-4xl,.fas.fa-angle-right.text-4xl {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 45px;
+}
+.sLeft.absolute.cursor-pointer {
+	left: 50px;
+	top: 36%;
+	background: #b1b1b196;
+	padding: 5px;
+	width: 45px;
+	height: 45px;
+	border-radius: 5px;
+	transition: .4s;
+}
+.sLeft.absolute.cursor-pointer:hover,.sRight.absolute.cursor-pointer:hover{
+	background: #000000e0;
+	color: white;
+}
+.sRight.absolute.cursor-pointer {
+	right: 4px;
+	top: 36%;
+	background: #b1b1b196;
+	padding: 5px;
+	width: 45px;
+	height: 45px;
+	border-radius: 5px;
+	transition: .4s;
+}

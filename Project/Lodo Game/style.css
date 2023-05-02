@@ -1,0 +1,446 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main-bord {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    background: #914a74;
+    height: 100vh;
+    width: 100%;
+}
+#play-ground {
+	width: 90%;
+	display: grid;
+	justify-self: center;
+}
+.play-inner {
+	border: 6px solid #945939;
+	border-radius: 3px;
+	box-shadow: 0px 0px 2px 1.5px #ff803c91;
+	position: relative;
+}
+p {
+	color: white;
+}
+#main-bord #user-01, #user-02 {
+	display: grid;
+	justify-self: center;
+	width: 90%;
+	grid-template-columns: repeat(2,1fr);
+}
+#main-bord .inner-bord {
+	display: grid;
+	grid-template-rows: 1fr auto 1fr;
+	height: 90vh;
+	max-width: 600px;
+	background: #5b2f4a;
+	border-radius: 10px;
+	box-shadow: 0px 1px 20px 0px #ff6ec4;
+}
+#main-bord #play-ground .play-ground-01 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+#main-bord #play-ground .play-ground-02{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+#main-bord #play-ground .play-ground-02 .inner-plaground-01{
+	display: grid;
+	grid-template:repeat(3,1fr ) / repeat( 6, 1fr);
+	height: 68px;
+	width: 120px;
+}
+#main-bord #play-ground .play-ground-01 .part-01 {
+	height: 120px;
+	width: 120px;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+}
+#main-bord #play-ground .play-ground-01 .part-01 .part-01-inner {
+	height: 80%;
+	width: 80%;
+	border-radius: 10px;
+	display: grid;
+	grid-template: 1fr 1fr / 1fr 1fr;
+	justify-items: center;
+	align-items: center;
+	padding: 15px;
+}
+#main-bord #play-ground .play-ground-01 .part-01 .part-01-inner .red-inner-inner,
+#main-bord #play-ground .play-ground-01 .part-01 .part-01-inner .youlo-inner-inner,
+#main-bord #play-ground .play-ground-01 .part-01 .part-01-inner .grin-02-inner-inner,
+#main-bord #play-ground .play-ground-01 .part-01 .part-01-inner .grin-inner-inner{
+	width: 75%;
+	height: 75%;
+	border-radius: 50%;
+}
+#main-bord #play-ground .play-ground-01 .part-02 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+}
+#main-bord #play-ground .play-ground-01 .part-02 > div{
+	border: 1px solid #000;
+}
+#main-bord #play-ground .play-ground-01 .part-02 div:nth-child(3n){
+	border-bottom: 0;
+	border-left: 0;
+}
+#main-bord #play-ground .play-ground-02 .inner-plaground-01 div {
+	border: 1px solid #000;
+}
+.play-ground-02 .inner-plaground-03{
+	display: grid;
+	grid-template:repeat(3, 1fr) / repeat(6, 1fr);
+	width: 120px;
+}
+.play-ground-02 .inner-plaground-03 div{
+	border: 1px solid #000;
+}
+.play-ground-02 .inner-plaground {
+	background-color: #00ffabbf;
+}
+.play-ground-02 .inner-plaground-03 div:nth-child(2n) {
+	border-left: 0;
+}
+.play-ground-02 .inner-plaground-03 div:nth-child(2n+3) {
+	border-left: 0;
+}
+#user-01 div.user-box {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 3px solid #fbc523;
+}
+#user-02 div.user-box {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 3px solid #e94a35;
+}
+#user-02 div.user-box img{
+	height: 50px;
+	width: 50px;
+}
+#user-01 div.user-box img{
+	height: 50px;
+	width: 50px;
+}
+#main-bord #user-01 {
+	align-content: end;
+	margin-bottom: 20px;
+}
+#user-02 .player01 {
+	display: flex;
+}
+#user-02 p {
+	color: white;
+	margin-top: 10px;
+}
+#user-02 .dayce-conten-01 {
+	display: flex;
+	margin-left: 20px;
+	margin-top: 33px;
+}
+#user-02 .dayce-conten-01 #dayce-box {
+	width: 45px;
+	height: 40px;
+	background: red;
+	border-radius: 10px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#user-02 .dayce-conten-01 button {
+	color: white;
+	font-size: 37px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	cursor: pointer;
+	background: none;
+	border: none;
+}
+#user-02 .dayce-conten-01 #dayce-box::before {
+	content: " ";
+	position: absolute;
+	border: 10px solid transparent;
+	border-left: 15px solid red;
+	transform: rotate(181deg);
+	bottom: 9px;
+	left: -22px;
+}
+#user-02 .dayce-conten-01 #dayce-box #main-dayce-01 {
+	width: 75%;
+	height: 80%;
+	background-color: green;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 3px;
+}
+.user-work {
+	display: grid;
+	justify-content: center;
+	justify-items: center;
+	align-content: baseline;
+}
+.red-inner-inner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.part-01.player-01 #dana{
+	background: #e94a35;
+	box-shadow: 1px 1px 2px 1px #000;
+	height: 6%;
+	width: 6%;
+	border-radius: 50%;
+	position: absolute;
+	transition: .5s;
+}
+#user-02 .player-04 {
+	display: grid;
+	justify-content: right;
+	grid-template-columns: repeat(2,1fr);
+}
+.player-02 {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+}
+.player-03 {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+}
+.dayce-conten-02 #dayce-box{
+	width: 45px;
+	height: 40px;
+	background: #22cb74d9;
+	border-radius: 10px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.dayce-conten-03 #dayce-box {
+	width: 45px;
+	height: 40px;
+	background: #a9f306;
+	border-radius: 10px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 16px;
+}
+#user-01 .dayce-conten-02 #dayce-box::before {
+	content: " ";
+	position: absolute;
+	border: 10px solid transparent;
+	border-left: 15px solid #2ab36d;
+	transform: rotate(181deg);
+	bottom: 9px;
+	left: -22px;
+}
+#user-01 .dayce-conten-03 #dayce-box::before {
+	content: " ";
+	position: absolute;
+	border: 10px solid transparent;
+	border-left: 15px solid #a9f306;
+	transform: rotate(0deg);
+	bottom: 9px;
+	right: -22px;
+}
+#main-dayce-02 {
+	height: 80%;
+	width: 75%;
+	background: #ca41f1;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#main-dayce-03 {
+	height: 80%;
+	width: 75%;
+	background: #7f00e9;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#user-01 .dayce-conten-02 button {
+	color: white;
+	font-size: 37px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	cursor: pointer;
+	background: none;
+	border: none;
+}
+#user-01 .dayce-conten-03 button {
+	color: white;
+	font-size: 37px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	cursor: pointer;
+	background: none;
+	border: none;
+}
+#user-02 .dayce-conten-04 #dayce-box::before {
+	content: " ";
+	position: absolute;
+	border: 10px solid transparent;
+	border-left: 15px solid rgb(4, 0, 255);
+	transform: rotate(0deg);
+	bottom: 9px;
+	right: -22px;
+}
+#user-02 .dayce-conten-04 #dayce-box {
+	width: 45px;
+	height: 40px;
+	background: rgb(4, 0, 255);
+	border-radius: 10px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#user-02 .dayce-conten-04 #dayce-box #main-dayce-04 {
+	width: 75%;
+	height: 80%;
+	background-color: rgb(38, 218, 15);
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 3px;
+}
+#user-02 .dayce-conten-04 button {
+	color: white;
+	font-size: 37px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	cursor: pointer;
+	background: none;
+	border: none;
+}
+.dayce-conten-03 {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+.dayce-conten-04 {
+	display: flex;
+	justify-content: end;
+}
+.dayce-conten-04 #dayce-box {
+	margin-top: 33px;
+}
+#main-dayce-02,#main-dayce-03,#main-dayce-04{
+	cursor: pointer;
+}
+.part-01.player-04 #dana {
+	background: #1e90ff;
+	box-shadow: 1px 1px 2px 1px #000;
+	height: 6%;
+	width: 6%;
+	border-radius: 50%;
+	position: absolute;
+	transition: .5s;
+}
+.part-01.youlo #dana {
+	background: #fbc523;
+	box-shadow: 1px 1px 2px 1px #000;
+	height: 6%;
+	width: 6%;
+	border-radius: 50%;
+	position: absolute;
+	transition: .5s;
+}
+.part-01.grin-02 #dana {
+	background: #22cb58;
+	box-shadow: 1px 1px 2px 1px #000;
+	height: 6%;
+	width: 6%;
+	border-radius: 50%;
+	position: absolute;
+	transition: .5s;
+}
+
+/* Animation */
+#main-bord #play-ground .play-ground-01 .part-01{
+	background-color:  #e94a35;
+}
+.part-01.player-01 #dana.animation{
+	animation-name: DanaAni;
+	animation-duration: .8s;                                 
+    animation-timing-function:ease-out;                   
+    animation-iteration-count: infinite;  
+}
+.part-01.player-01.active{
+	animation-name: player01;
+	animation-duration: .8s;                                 
+    animation-timing-function:ease-out;                   
+    animation-iteration-count: infinite;  
+}
+
+.player-01 .dana-02.active {
+	bottom: 20px;
+	left: 126px;
+}
+
+
+@keyframes DanaAni{
+	
+	50%{
+		transform: scale(1.2); 
+	}
+
+}
+
+@keyframes player01{
+
+	50%{
+		background-color: rgba(255, 0, 0, 0.774);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:900px) {
+	#main-bord .inner-bord {
+		height: 100%;
+	}
+}

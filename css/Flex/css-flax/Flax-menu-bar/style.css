@@ -1,0 +1,80 @@
+/* Default CSS Style Starts */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(92, 91, 91);
+}
+.header{
+    max-width: 1200px;
+    height: auto;
+    margin: auto;
+}
+.border-left{
+    border-left: 1px solid #ddd;
+}
+.border-right{
+    border-left: 1px solid #ddd;
+}
+.border-top{
+    border-top: 1px solid #ddd;
+}
+.border-bottom{
+    border-bottom: 1px solid #ddd;
+}
+
+.padding{
+padding: 10px 30px;
+}
+
+/* Default CSS Style Ends */
+
+
+/* Menu Ber Starts Here */
+.menu-ber{ 
+    background: rgb(50, 221, 7);
+}
+.menu-ber ul{
+    display: flex;
+    list-style: none;
+    justify-content: right;
+}
+.menu-ber ul li{}
+.header .menu-ber ul li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+/* Hover Part */
+.menu-ber ul li{
+    position: relative;
+}
+.menu-ber ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background: rgb(50, 221, 7);
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    transform-origin: top center;
+    transform: scaley(0);
+}
+.menu-ber ul li:hover ul{
+    opacity: 1;
+    visibility: visible; 
+    transform: scaley(1);
+}
+.menu-ber ul li ul li{}
+.menu-ber ul li ul li a{
+    display: block;
+}
+
+/* Menu Ber Ends Here */
+
+/* CSS Prectic Part */ 
+h1:
